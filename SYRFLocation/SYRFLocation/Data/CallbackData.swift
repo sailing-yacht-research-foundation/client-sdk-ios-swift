@@ -24,7 +24,24 @@ public protocol HeadingDelegate {
 }
 
 public protocol RegionDelegate {
-    
+    func regionDidEnter(_ region: SYRFRegion)
+    func regionDidExit(_ region: SYRFRegion)
+    func regionFailed(_ error: Error)
+}
+
+public protocol SensorsGyroDelegate {
+    func gyroUpdated(_ data: SYRFSensorsGyroData)
+    func gyroFailed(_ error: Error)
+}
+
+public protocol SensorsAcceleroDelegate {
+    func acceleroUpdated(_ data: SYRFSensorsAcceleroData)
+    func acceleroFailed(_ error: Error)
+}
+
+public protocol SensorsMagnetoDelegate {
+    func magnetoUpdated(_ data: SYRFSensorsMagnetoData)
+    func magnetoFailed(_ error: Error)
 }
 
 

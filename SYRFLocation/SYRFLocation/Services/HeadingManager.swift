@@ -62,7 +62,7 @@ public class HeadingManager: NSObject {
     public func stopHeadingUpdates() {
         let (canUse, error) = LocationUtils.canUseLocation()
         if (canUse) {
-            self.stopHeadingUpdates()
+            self.locationManager.stopUpdatingHeading()
         } else if let error = error {
             self.delegate?.headingFailed(error)
         }

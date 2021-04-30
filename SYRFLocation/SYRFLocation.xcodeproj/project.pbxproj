@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C6184B6C262F1E8600C9B751 /* LocationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6184B6B262F1E8600C9B751 /* LocationUtils.swift */; };
 		C6184B6E262F20DC00C9B751 /* GeneralConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6184B6D262F20DC00C9B751 /* GeneralConfig.swift */; };
+		C6278D77263C0013008CE7A5 /* RegionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6278D76263C0013008CE7A5 /* RegionConfig.swift */; };
+		C6278D7B263C0013008CE7A5 /* RegionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6278D7A263C0013008CE7A5 /* RegionUtils.swift */; };
 		C67632EF261B1B7A007E987C /* RegionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67632EE261B1B7A007E987C /* RegionManager.swift */; };
 		C67632F3261B1B95007E987C /* HeadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67632F2261B1B95007E987C /* HeadingManager.swift */; };
 		C67632F7261B1BBB007E987C /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67632F6261B1BBB007E987C /* LocationData.swift */; };
@@ -18,6 +20,14 @@
 		C6763307261B1BED007E987C /* LocationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6763306261B1BED007E987C /* LocationConfig.swift */; };
 		C676330B261B1BF8007E987C /* HeadingConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C676330A261B1BF8007E987C /* HeadingConfig.swift */; };
 		C676330F261B1C6E007E987C /* CallbackData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C676330E261B1C6E007E987C /* CallbackData.swift */; };
+		C681A17E263192C9000AFAF4 /* SensorsGyroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681A17D263192C9000AFAF4 /* SensorsGyroData.swift */; };
+		C681A180263192D6000AFAF4 /* SensorsAcceleroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681A17F263192D6000AFAF4 /* SensorsAcceleroData.swift */; };
+		C681A182263192E2000AFAF4 /* SensorsMagnetoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681A181263192E2000AFAF4 /* SensorsMagnetoData.swift */; };
+		C681A184263192FB000AFAF4 /* SensorsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681A183263192FB000AFAF4 /* SensorsUtils.swift */; };
+		C681A18626319309000AFAF4 /* SensorsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681A18526319309000AFAF4 /* SensorsConfig.swift */; };
+		C681A18826319325000AFAF4 /* SensorsAcceleroManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681A18726319325000AFAF4 /* SensorsAcceleroManager.swift */; };
+		C681A18A2631932F000AFAF4 /* SensorsGyroManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681A1892631932F000AFAF4 /* SensorsGyroManager.swift */; };
+		C681A18C2631933B000AFAF4 /* SensorsMagnetoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681A18B2631933B000AFAF4 /* SensorsMagnetoManager.swift */; };
 		C6A983A9261AFF3D000B50DD /* SYRFLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A9839F261AFF3D000B50DD /* SYRFLocation.framework */; };
 		C6A983AE261AFF3D000B50DD /* SYRFLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A983AD261AFF3D000B50DD /* SYRFLocationTests.swift */; };
 		C6A983B0261AFF3D000B50DD /* SYRFLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A983A2261AFF3D000B50DD /* SYRFLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +48,8 @@
 /* Begin PBXFileReference section */
 		C6184B6B262F1E8600C9B751 /* LocationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUtils.swift; sourceTree = "<group>"; };
 		C6184B6D262F20DC00C9B751 /* GeneralConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralConfig.swift; sourceTree = "<group>"; };
+		C6278D76263C0013008CE7A5 /* RegionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionConfig.swift; sourceTree = "<group>"; };
+		C6278D7A263C0013008CE7A5 /* RegionUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionUtils.swift; sourceTree = "<group>"; };
 		C67632EE261B1B7A007E987C /* RegionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionManager.swift; sourceTree = "<group>"; };
 		C67632F2261B1B95007E987C /* HeadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingManager.swift; sourceTree = "<group>"; };
 		C67632F6261B1BBB007E987C /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
@@ -47,6 +59,14 @@
 		C6763306261B1BED007E987C /* LocationConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationConfig.swift; sourceTree = "<group>"; };
 		C676330A261B1BF8007E987C /* HeadingConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingConfig.swift; sourceTree = "<group>"; };
 		C676330E261B1C6E007E987C /* CallbackData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackData.swift; sourceTree = "<group>"; };
+		C681A17D263192C9000AFAF4 /* SensorsGyroData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsGyroData.swift; sourceTree = "<group>"; };
+		C681A17F263192D6000AFAF4 /* SensorsAcceleroData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsAcceleroData.swift; sourceTree = "<group>"; };
+		C681A181263192E2000AFAF4 /* SensorsMagnetoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsMagnetoData.swift; sourceTree = "<group>"; };
+		C681A183263192FB000AFAF4 /* SensorsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsUtils.swift; sourceTree = "<group>"; };
+		C681A18526319309000AFAF4 /* SensorsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsConfig.swift; sourceTree = "<group>"; };
+		C681A18726319325000AFAF4 /* SensorsAcceleroManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsAcceleroManager.swift; sourceTree = "<group>"; };
+		C681A1892631932F000AFAF4 /* SensorsGyroManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsGyroManager.swift; sourceTree = "<group>"; };
+		C681A18B2631933B000AFAF4 /* SensorsMagnetoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsMagnetoManager.swift; sourceTree = "<group>"; };
 		C6A9839F261AFF3D000B50DD /* SYRFLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SYRFLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A983A2261AFF3D000B50DD /* SYRFLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYRFLocation.h; sourceTree = "<group>"; };
 		C6A983A3261AFF3D000B50DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,9 +148,12 @@
 		C6A983BE261AFF6D000B50DD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C67632F2261B1B95007E987C /* HeadingManager.swift */,
 				C6A983C5261AFFAF000B50DD /* LocationManager.swift */,
 				C67632EE261B1B7A007E987C /* RegionManager.swift */,
-				C67632F2261B1B95007E987C /* HeadingManager.swift */,
+				C681A18726319325000AFAF4 /* SensorsAcceleroManager.swift */,
+				C681A1892631932F000AFAF4 /* SensorsGyroManager.swift */,
+				C681A18B2631933B000AFAF4 /* SensorsMagnetoManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -138,10 +161,12 @@
 		C6A983BF261AFF76000B50DD /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				C6763302261B1BE3007E987C /* PermissionsConfig.swift */,
-				C6763306261B1BED007E987C /* LocationConfig.swift */,
-				C676330A261B1BF8007E987C /* HeadingConfig.swift */,
 				C6184B6D262F20DC00C9B751 /* GeneralConfig.swift */,
+				C676330A261B1BF8007E987C /* HeadingConfig.swift */,
+				C6763306261B1BED007E987C /* LocationConfig.swift */,
+				C6763302261B1BE3007E987C /* PermissionsConfig.swift */,
+				C6278D76263C0013008CE7A5 /* RegionConfig.swift */,
+				C681A18526319309000AFAF4 /* SensorsConfig.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -150,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				C6184B6B262F1E8600C9B751 /* LocationUtils.swift */,
+				C6278D7A263C0013008CE7A5 /* RegionUtils.swift */,
+				C681A183263192FB000AFAF4 /* SensorsUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -157,10 +184,13 @@
 		C6A983C9261B1AD0000B50DD /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C676330E261B1C6E007E987C /* CallbackData.swift */,
+				C67632FE261B1BD1007E987C /* HeadingData.swift */,
 				C67632F6261B1BBB007E987C /* LocationData.swift */,
 				C67632FA261B1BC8007E987C /* RegionData.swift */,
-				C67632FE261B1BD1007E987C /* HeadingData.swift */,
-				C676330E261B1C6E007E987C /* CallbackData.swift */,
+				C681A17F263192D6000AFAF4 /* SensorsAcceleroData.swift */,
+				C681A17D263192C9000AFAF4 /* SensorsGyroData.swift */,
+				C681A181263192E2000AFAF4 /* SensorsMagnetoData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -275,16 +305,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6184B6C262F1E8600C9B751 /* LocationUtils.swift in Sources */,
+				C681A180263192D6000AFAF4 /* SensorsAcceleroData.swift in Sources */,
 				C6184B6E262F20DC00C9B751 /* GeneralConfig.swift in Sources */,
 				C67632FF261B1BD1007E987C /* HeadingData.swift in Sources */,
+				C6278D7B263C0013008CE7A5 /* RegionUtils.swift in Sources */,
+				C681A18626319309000AFAF4 /* SensorsConfig.swift in Sources */,
+				C681A18C2631933B000AFAF4 /* SensorsMagnetoManager.swift in Sources */,
 				C676330F261B1C6E007E987C /* CallbackData.swift in Sources */,
 				C67632EF261B1B7A007E987C /* RegionManager.swift in Sources */,
+				C681A182263192E2000AFAF4 /* SensorsMagnetoData.swift in Sources */,
 				C676330B261B1BF8007E987C /* HeadingConfig.swift in Sources */,
 				C6A983C6261AFFAF000B50DD /* LocationManager.swift in Sources */,
+				C681A17E263192C9000AFAF4 /* SensorsGyroData.swift in Sources */,
+				C681A184263192FB000AFAF4 /* SensorsUtils.swift in Sources */,
 				C67632F3261B1B95007E987C /* HeadingManager.swift in Sources */,
 				C6763303261B1BE3007E987C /* PermissionsConfig.swift in Sources */,
 				C67632FB261B1BC8007E987C /* RegionData.swift in Sources */,
+				C681A18A2631932F000AFAF4 /* SensorsGyroManager.swift in Sources */,
+				C681A18826319325000AFAF4 /* SensorsAcceleroManager.swift in Sources */,
 				C6763307261B1BED007E987C /* LocationConfig.swift in Sources */,
+				C6278D77263C0013008CE7A5 /* RegionConfig.swift in Sources */,
 				C6A983C2261AFFA3000B50DD /* PermissionsManager.swift in Sources */,
 				C67632F7261B1BBB007E987C /* LocationData.swift in Sources */,
 			);

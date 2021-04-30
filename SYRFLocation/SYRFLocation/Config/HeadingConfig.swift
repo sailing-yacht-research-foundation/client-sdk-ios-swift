@@ -17,4 +17,9 @@ public class HeadingManagerConfig {
         self.headingOrientation = .portrait
         self.headingFilter = kCLHeadingFilterNone
     }
+    
+    public init(orientation: CLDeviceOrientation, filter: CLLocationDegrees) {
+        self.headingOrientation = orientation
+        self.headingFilter = filter
+    }
 }

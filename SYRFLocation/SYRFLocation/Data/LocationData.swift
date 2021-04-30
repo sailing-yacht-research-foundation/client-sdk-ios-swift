@@ -18,9 +18,14 @@ public class SYRFCoordinate {
         self.longitude = 0
     }
     
-    init(_ coordinate: CLLocationCoordinate2D) {
+    public init(_ coordinate: CLLocationCoordinate2D) {
         self.latitude = coordinate.latitude
         self.longitude = coordinate.longitude
+    }
+    
+    public init(latitude: Double, longitude: Double) {
+        self.latitude = latitude
+        self.longitude = longitude
     }
 }
 
