@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SYRFLocation"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "SYRFLocation Library for Core Location and Core Motion."
 
   # This description is used to generate tags and improve search results.
@@ -26,10 +26,10 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
 	SYRFLocation Library for Core Location and Core Motion.
-	Geolocation, geofencing, heading, sensors.
+	The SYRF Client SDK simplifies tracker management for developers.
 			DESC
 
-  spec.homepage     = "http://cocoapods.org/pods/SYRFLocation"
+  spec.homepage     = "https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -83,7 +83,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift.git", :tag => "0.0.3" }
+  spec.source       = { :git => "https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift.git", :tag => "0.0.4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
