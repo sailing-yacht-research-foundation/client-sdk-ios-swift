@@ -124,6 +124,7 @@ extension LocationManager: CLLocationManagerDelegate {
         if let location = locations.first {
             if (self.isGettingLocation) {
                 self.delegate?.currentLocationUpdated(SYRFLocation(location: location))
+                self.isGettingLocation = false
             }
             if (self.isUpdating || self.isMonitoring) {
                 self.delegate?.locationUpdated(SYRFLocation(location: location))
