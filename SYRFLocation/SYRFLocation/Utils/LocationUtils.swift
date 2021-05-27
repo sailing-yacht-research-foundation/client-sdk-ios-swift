@@ -7,9 +7,25 @@
 
 import Foundation
 
+/**
+ Location Utils class containing general methods for Location functionality
+ - Methods:
+    - canUseCoreLocation
+*/
 class LocationUtils {
     
-    static func canUseLocation() -> (Bool, Error?) {
+    /**
+     Utility method for verifying CoreLocation permissions and access to CoreLocation functionality
+     
+     - Returns:
+        A tuple value of Bool and Error
+        The Bool value indicates if the CoreLocation functionality is accessible and can be used. If true, the second tuple value can be ignored
+        The Error value indicates a specific SYRFLocationError to be further used down the chain of actions
+     
+     - Note:
+        To be used before CoreLocation methods that require permissions (e.g. requestLocation, startLocationUpdates)
+     */
+    static func canUseCoreLocation() -> (Bool, Error?) {
         let permissionsManager = PermissionsManager()
         let status = permissionsManager.checkAuthorization()
         var canUse = false

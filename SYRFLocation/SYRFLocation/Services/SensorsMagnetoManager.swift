@@ -42,7 +42,7 @@ public class SensorsMagnetoManager: NSObject {
     }
     
     public func startMagnetoUpdates() {
-        let (canUse, error) = SensorsUtils.canMonitorGyro(self.motionManager)
+        let (canUse, error) = SensorsUtils.canMonitorMagneto(self.motionManager)
         if (canUse) {
             let operationQueue = (self.configuration.runInBackground ?? true) ? OperationQueue() : OperationQueue.main
             self.motionManager.magnetometerUpdateInterval = self.configuration.updateInterval ?? 0

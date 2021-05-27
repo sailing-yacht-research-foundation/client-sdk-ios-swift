@@ -42,7 +42,7 @@ public class SensorsAcceleroManager: NSObject {
     }
     
     public func startAcceleroUpdates() {
-        let (canUse, error) = SensorsUtils.canMonitorGyro(self.motionManager)
+        let (canUse, error) = SensorsUtils.canMonitorAccelero(self.motionManager)
         if (canUse) {
             let operationQueue = (self.configuration.runInBackground ?? true) ? OperationQueue() : OperationQueue.main
             self.motionManager.accelerometerUpdateInterval = self.configuration.updateInterval ?? 0

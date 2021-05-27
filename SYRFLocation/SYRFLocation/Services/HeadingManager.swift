@@ -51,7 +51,7 @@ public class HeadingManager: NSObject {
     }
     
     public func startHeadingUpdates() {
-        let (canUse, error) = LocationUtils.canUseLocation()
+        let (canUse, error) = LocationUtils.canUseCoreLocation()
         if (canUse) {
             self.locationManager.startUpdatingHeading()
         } else if let error = error {
@@ -60,7 +60,7 @@ public class HeadingManager: NSObject {
     }
     
     public func stopHeadingUpdates() {
-        let (canUse, error) = LocationUtils.canUseLocation()
+        let (canUse, error) = LocationUtils.canUseCoreLocation()
         if (canUse) {
             self.locationManager.stopUpdatingHeading()
         } else if let error = error {

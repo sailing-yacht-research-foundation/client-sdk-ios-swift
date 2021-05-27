@@ -65,7 +65,7 @@ public class LocationManager: NSObject {
     }
     
     public func getCurrentLocation() {
-        let (canUse, error) = LocationUtils.canUseLocation()
+        let (canUse, error) = LocationUtils.canUseCoreLocation()
         if (canUse) {
             self.locationManager.requestLocation()
             self.isGettingLocation = true
@@ -75,7 +75,7 @@ public class LocationManager: NSObject {
     }
     
     public func startLocationUpdates() {
-        let (canUse, error) = LocationUtils.canUseLocation()
+        let (canUse, error) = LocationUtils.canUseCoreLocation()
         if (canUse) {
             if (self.shouldUseMonitoring()) {
                 self.locationManager.startMonitoringSignificantLocationChanges()
@@ -90,7 +90,7 @@ public class LocationManager: NSObject {
     }
     
     public func stopLocationUpdates() {
-        let (canUse, error) = LocationUtils.canUseLocation()
+        let (canUse, error) = LocationUtils.canUseCoreLocation()
         if (canUse) {
             if (self.isMonitoring) {
                 self.locationManager.stopMonitoringSignificantLocationChanges()
