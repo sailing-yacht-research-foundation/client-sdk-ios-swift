@@ -2,7 +2,7 @@
 //  SYRFLocation.h
 //  SYRFLocation
 //
-//  Created by Radu Rad on 4/5/21.
+//  Created by SYRF on 4/5/21.
 //
 
 #import <Foundation/Foundation.h>

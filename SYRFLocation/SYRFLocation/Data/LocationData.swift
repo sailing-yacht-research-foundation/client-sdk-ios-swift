@@ -42,7 +42,7 @@ public class SYRFCoordinate {
     
     /**
      Initializer using specific coordinates
-     Coordinates data is set parameters
+     Coordinates data is set from parameters
         
      - Parameters:
         - latitude: The latitude value.

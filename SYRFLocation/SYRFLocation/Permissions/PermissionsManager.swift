@@ -2,23 +2,41 @@
 //  PermissionsManager.swift
 //  SYRFLocation
 //
-//  Created by Radu Rad on 4/20/21.
+//  Created by SYRF on 4/20/21.
 //
 
 import Foundation
 import CoreLocation
 
-// Permissions Manager
+/**
+ Manager class responsible for providing core location permissions status and requesting permissions
+ 
+ PermissionsManager is to be used before requesting monitoring or one-time location through the use of the LocationManager.
+ 
+ PermissionsManager informs about the permissions status through:
+ - checkAuthorization
+ - checkAccuracy
+ 
+ PermissionsManager can request permissions for core location through:
+ - requestAuthorization
+ - requestAccuracy
+ */
 public class PermissionsManager: NSObject {
     
     //MARK: - Properties
     
+    /// The manager delegate, used to pass back location information as they are obtained
     public var delegate: PermissionsDelegate?
     
+    /// The root object providing access to Core Location functionality
     private let locationManager: CLLocationManager!
     
     //MARK: - Lifecycle
     
+    /**
+     Default initializer
+     Default initialization of the core location manager
+     */
     override public init() {
         self.locationManager = CLLocationManager()
         self.delegate = nil
@@ -28,26 +46,55 @@ public class PermissionsManager: NSObject {
         self.locationManager.delegate = self
     }
     
+    /**
+     Initializer to set up the manager delegate
+     Uses the default initializer
+        
+     - Parameters:
+        - delegate: The manager delegate value, used for passing back permissions information
+     */
     public convenience init(delegate: PermissionsDelegate?) {
         self.init()
         
         self.delegate = delegate
     }
     
+    /**
+     Deinitializer of the manager
+    */
     deinit {
         
     }
     
     //MARK: - Public Methods
     
+    /**
+     Retrive Core Location authorization permissions status
+     
+     - Returns:
+        A PermissionsAuthorization status
+     */
     public func checkAuthorization() -> PermissionsAuthorization {
         return self.getAuthorizationStatus()
     }
     
+    /**
+     Retrive Core Location accuracy permissions status
+     
+     - Returns:
+        A PermissionsAccuracy status
+     */
     public func checkAccuracy() -> PermissionsAccuracy {
         return self.getAccuracyStatus()
     }
     
+    /**
+     Request Core Location authorization permissions
+     Allowed permissions are always and whenInUse
+     
+     - Parameters:
+        - type: A permission type that will be requested
+     */
     public func requestAuthorization(_ type: PermissionsType) {
         switch type {
         case .always:
@@ -57,6 +104,13 @@ public class PermissionsManager: NSObject {
         }
     }
     
+    /**
+     Request Core Location accuracy permissions
+     Allowed permissions are full and reduced
+     
+     - Parameters:
+        - type: A permission purpose description key
+     */
     public func requestAccuracy(_ purposeKey: String) {
         if #available(iOS 14.0, *) {
             self.locationManager.requestTemporaryFullAccuracyAuthorization(withPurposeKey: purposeKey)
@@ -67,6 +121,13 @@ public class PermissionsManager: NSObject {
     
     //MARK: - Private Methods
     
+    /**
+     Checks Core Location authorization permissions status
+     Based on Core Location authorization permissions the PermissionsAuthorization status is returned
+     
+     - Returns:
+        A PermissionsAuthorization status
+     */
     private func getAuthorizationStatus() -> PermissionsAuthorization {
         var status = PermissionsAuthorization.notDetermined
         var authorizationStatus = CLAuthorizationStatus.notDetermined
@@ -96,6 +157,13 @@ public class PermissionsManager: NSObject {
         return status
     }
     
+    /**
+     Checks Core Location accuracy permissions status
+     Based on Core Location accuracy permissions the PermissionsAccuracy status is returned
+     
+     - Returns:
+        A PermissionsAccuracy status
+     */
     private func getAccuracyStatus() -> PermissionsAccuracy {
         var status = PermissionsAccuracy.reduced
         
@@ -119,7 +187,11 @@ public class PermissionsManager: NSObject {
     
 }
 
-// Core Location Manager Delegate extension
+/**
+ Core Location Manager Delegate Extension
+ Permissions updates are provided through the Core Location Manager Delegate
+ Each time the permissions authorization or accuracy status changes the coresponding PermissionsDelegate method is called
+ */
 extension PermissionsManager: CLLocationManagerDelegate {
     
     public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {

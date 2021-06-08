@@ -2,7 +2,7 @@
 //  SensorsUtils.swift
 //  SYRFLocation
 //
-//  Created by Radu Rad on 4/22/21.
+//  Created by SYRF on 4/22/21.
 //
 
 import Foundation
