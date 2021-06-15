@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16230AF82858925B2D0136D0 /* Pods_SYRFGeospatial_SYRFGeospatialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99E71969663D9A02C651465 /* Pods_SYRFGeospatial_SYRFGeospatialTests.framework */; };
+		A94F13BB0396C9480A2CE5EF /* Pods_SYRFGeospatial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19B6CE6DC488FB7DDB7A47D /* Pods_SYRFGeospatial.framework */; };
 		C6A3B49E2678876500C8FCD9 /* SYRFGeospatial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A3B4942678876500C8FCD9 /* SYRFGeospatial.framework */; };
 		C6A3B4A32678876500C8FCD9 /* SYRFGeospatialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A3B4A22678876500C8FCD9 /* SYRFGeospatialTests.swift */; };
 		C6A3B4A52678876500C8FCD9 /* SYRFGeospatial.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A3B4972678876500C8FCD9 /* SYRFGeospatial.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -14,6 +16,8 @@
 		C6A3B4B92678BB2B00C8FCD9 /* EngineOneData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A3B4B82678BB2B00C8FCD9 /* EngineOneData.swift */; };
 		C6A3B4BB2678BB8900C8FCD9 /* CallbackData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A3B4BA2678BB8900C8FCD9 /* CallbackData.swift */; };
 		C6A3B4C92678D1B700C8FCD9 /* Turf.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = C6A3B4C82678D1B700C8FCD9 /* Turf.bundle.js */; };
+		C6B090A7267909D900F42D91 /* GeosEngineTwoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B090A6267909D900F42D91 /* GeosEngineTwoManager.swift */; };
+		C6B090A926790B0F00F42D91 /* EngineTwoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B090A826790B0F00F42D91 /* EngineTwoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		025220CA758EAD29E243A61E /* Pods-SYRFGeospatial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYRFGeospatial.debug.xcconfig"; path = "Target Support Files/Pods-SYRFGeospatial/Pods-SYRFGeospatial.debug.xcconfig"; sourceTree = "<group>"; };
+		0F6A96641B1F8B8674C6DE03 /* Pods-SYRFGeospatial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYRFGeospatial.release.xcconfig"; path = "Target Support Files/Pods-SYRFGeospatial/Pods-SYRFGeospatial.release.xcconfig"; sourceTree = "<group>"; };
+		159365A56F3DF1A01F77E3B3 /* Pods-SYRFGeospatial-SYRFGeospatialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYRFGeospatial-SYRFGeospatialTests.release.xcconfig"; path = "Target Support Files/Pods-SYRFGeospatial-SYRFGeospatialTests/Pods-SYRFGeospatial-SYRFGeospatialTests.release.xcconfig"; sourceTree = "<group>"; };
+		A99E71969663D9A02C651465 /* Pods_SYRFGeospatial_SYRFGeospatialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYRFGeospatial_SYRFGeospatialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A3B4942678876500C8FCD9 /* SYRFGeospatial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SYRFGeospatial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A3B4972678876500C8FCD9 /* SYRFGeospatial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYRFGeospatial.h; sourceTree = "<group>"; };
 		C6A3B4982678876500C8FCD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +45,10 @@
 		C6A3B4B82678BB2B00C8FCD9 /* EngineOneData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineOneData.swift; sourceTree = "<group>"; };
 		C6A3B4BA2678BB8900C8FCD9 /* CallbackData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackData.swift; sourceTree = "<group>"; };
 		C6A3B4C82678D1B700C8FCD9 /* Turf.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Turf.bundle.js; path = Libraries/Turf/dist/Turf.bundle.js; sourceTree = SOURCE_ROOT; };
+		C6B090A6267909D900F42D91 /* GeosEngineTwoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeosEngineTwoManager.swift; sourceTree = "<group>"; };
+		C6B090A826790B0F00F42D91 /* EngineTwoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineTwoData.swift; sourceTree = "<group>"; };
+		C84EE95154DAC95DFC6FC6AF /* Pods-SYRFGeospatial-SYRFGeospatialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYRFGeospatial-SYRFGeospatialTests.debug.xcconfig"; path = "Target Support Files/Pods-SYRFGeospatial-SYRFGeospatialTests/Pods-SYRFGeospatial-SYRFGeospatialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D19B6CE6DC488FB7DDB7A47D /* Pods_SYRFGeospatial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYRFGeospatial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94F13BB0396C9480A2CE5EF /* Pods_SYRFGeospatial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +65,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6A3B49E2678876500C8FCD9 /* SYRFGeospatial.framework in Frameworks */,
+				16230AF82858925B2D0136D0 /* Pods_SYRFGeospatial_SYRFGeospatialTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CEAB5E61FEFCCBE0FC33635 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				025220CA758EAD29E243A61E /* Pods-SYRFGeospatial.debug.xcconfig */,
+				0F6A96641B1F8B8674C6DE03 /* Pods-SYRFGeospatial.release.xcconfig */,
+				C84EE95154DAC95DFC6FC6AF /* Pods-SYRFGeospatial-SYRFGeospatialTests.debug.xcconfig */,
+				159365A56F3DF1A01F77E3B3 /* Pods-SYRFGeospatial-SYRFGeospatialTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9930278F6E3B612127C75521 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D19B6CE6DC488FB7DDB7A47D /* Pods_SYRFGeospatial.framework */,
+				A99E71969663D9A02C651465 /* Pods_SYRFGeospatial_SYRFGeospatialTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6A3B48A2678876500C8FCD9 = {
 			isa = PBXGroup;
 			children = (
 				C6A3B4962678876500C8FCD9 /* SYRFGeospatial */,
 				C6A3B4A12678876500C8FCD9 /* SYRFGeospatialTests */,
 				C6A3B4952678876500C8FCD9 /* Products */,
+				2CEAB5E61FEFCCBE0FC33635 /* Pods */,
+				9930278F6E3B612127C75521 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				C6A3B4B52678B98100C8FCD9 /* GeosEngineOneManager.swift */,
+				C6B090A6267909D900F42D91 /* GeosEngineTwoManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -116,6 +153,7 @@
 		C6A3B4B72678BB1A00C8FCD9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C6B090A826790B0F00F42D91 /* EngineTwoData.swift */,
 				C6A3B4BA2678BB8900C8FCD9 /* CallbackData.swift */,
 				C6A3B4B82678BB2B00C8FCD9 /* EngineOneData.swift */,
 			);
@@ -148,6 +186,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6A3B4A82678876500C8FCD9 /* Build configuration list for PBXNativeTarget "SYRFGeospatial" */;
 			buildPhases = (
+				57DA411AAE8D4F4231BC79E4 /* [CP] Check Pods Manifest.lock */,
 				C6A3B48F2678876500C8FCD9 /* Headers */,
 				C6A3B4902678876500C8FCD9 /* Sources */,
 				C6A3B4912678876500C8FCD9 /* Frameworks */,
@@ -167,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6A3B4AB2678876500C8FCD9 /* Build configuration list for PBXNativeTarget "SYRFGeospatialTests" */;
 			buildPhases = (
+				9D1213B25E7679459819BD75 /* [CP] Check Pods Manifest.lock */,
 				C6A3B4992678876500C8FCD9 /* Sources */,
 				C6A3B49A2678876500C8FCD9 /* Frameworks */,
 				C6A3B49B2678876500C8FCD9 /* Resources */,
+				4E7B11E8563C3E01AB662606 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +278,67 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4E7B11E8563C3E01AB662606 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SYRFGeospatial-SYRFGeospatialTests/Pods-SYRFGeospatial-SYRFGeospatialTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SYRFGeospatial-SYRFGeospatialTests/Pods-SYRFGeospatial-SYRFGeospatialTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SYRFGeospatial-SYRFGeospatialTests/Pods-SYRFGeospatial-SYRFGeospatialTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57DA411AAE8D4F4231BC79E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SYRFGeospatial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D1213B25E7679459819BD75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SYRFGeospatial-SYRFGeospatialTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C6A3B4AE2678882200C8FCD9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +365,8 @@
 			files = (
 				C6A3B4BB2678BB8900C8FCD9 /* CallbackData.swift in Sources */,
 				C6A3B4B92678BB2B00C8FCD9 /* EngineOneData.swift in Sources */,
+				C6B090A7267909D900F42D91 /* GeosEngineTwoManager.swift in Sources */,
+				C6B090A926790B0F00F42D91 /* EngineTwoData.swift in Sources */,
 				C6A3B4B62678B98100C8FCD9 /* GeosEngineOneManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +514,7 @@
 		};
 		C6A3B4A92678876500C8FCD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 025220CA758EAD29E243A61E /* Pods-SYRFGeospatial.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +543,7 @@
 		};
 		C6A3B4AA2678876500C8FCD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6A96641B1F8B8674C6DE03 /* Pods-SYRFGeospatial.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -465,6 +571,7 @@
 		};
 		C6A3B4AC2678876500C8FCD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C84EE95154DAC95DFC6FC6AF /* Pods-SYRFGeospatial-SYRFGeospatialTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +591,7 @@
 		};
 		C6A3B4AD2678876500C8FCD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 159365A56F3DF1A01F77E3B3 /* Pods-SYRFGeospatial-SYRFGeospatialTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
