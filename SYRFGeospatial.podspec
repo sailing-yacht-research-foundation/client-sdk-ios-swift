@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SYRFGeospatial"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "SYRFGeospatial library for geometrical calculations."
 
   # This description is used to generate tags and improve search results.
@@ -27,6 +27,7 @@ Pod::Spec.new do |spec|
   spec.description  = <<-DESC
                    SYRFGeospatial Library for Geospatial calculations.
                    The library provides geospatial geometry calculations.
+                   DESC
 
   spec.homepage     = "https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -39,8 +40,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # spec.license      = "MIT (example)"
+  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -81,7 +82,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift.git", :tag => "0.0.5" }
+  spec.source       = { :git => "https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift.git", :tag => "0.0.6" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,7 +93,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "SYRFGeospatial", "SYRFGeospatial/SYRFGeospatial/*/*.{swift}"
+  spec.source_files  = "SYRFGeospatial", "SYRFGeospatial/SYRFGeospatial/**/*.{swift}"
   spec.exclude_files = "SYRFGeospatial/Exclude"
 
   # spec.public_header_files = "SYRFGeospatial/SYRFGeospatial/*.h"
@@ -134,6 +135,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  spec.dependency "GEOSwift"
+  spec.dependency "GEOSwift", "~> 8.1.0"
 
 end
