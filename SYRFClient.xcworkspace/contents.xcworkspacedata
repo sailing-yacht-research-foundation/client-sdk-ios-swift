@@ -8,6 +8,9 @@
       location = "group:SYRFTime/SYRFTime.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:SYRFGeospatial/SYRFGeospatial.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

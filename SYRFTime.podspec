@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint SYRFLocation.podspec' to ensure this is a
+#  Be sure to run `pod spec lint SYRFTime.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "SYRFLocation"
+  spec.name         = "SYRFTime"
   spec.version      = "0.0.5"
-  spec.summary      = "SYRFLocation Library for Core Location and Core Motion."
+  spec.summary      = "A short description of SYRFTime."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,8 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-	SYRFLocation Library for Core Location and Core Motion.
-	The SYRF Client SDK simplifies tracker management for developers.
-			DESC
+                   SYRFTime library for synchronized time.
+                   The library utilizes NTP servers for time precision.
 
   spec.homepage     = "https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -40,8 +39,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  # spec.license      = "MIT (example)"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.license      = "MIT (example)"
+  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -67,8 +66,8 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios
   spec.platform     = :ios, "13.0"
-  spec.swift_versions       = "5.0"
-
+  spec.swift_versions = "5.0"
+  
 
   #  When using multiple platforms
   spec.ios.deployment_target = "13.0"
@@ -83,7 +82,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift.git", :tag => "0.0.5" }
+  spec.source       = { "https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift.git", :tag => "0.0.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,10 +93,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "SYRFLocation", "SYRFLocation/SYRFLocation/**/*.{swift}"
-  spec.exclude_files = "SYRFLocation/Exclude"
+  spec.source_files  = "SYRFTime", "SYRFTime/SYRFTime/**/*.{swift}"
+  spec.exclude_files = "SYRFTime/Exclude"
 
-  # spec.public_header_files = "SYRFLocation/SYRFLocation/*.h"
+  spec.public_header_files = "SYRFTime/SYRFTime/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -136,6 +135,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency "Kronos"
 
 end
