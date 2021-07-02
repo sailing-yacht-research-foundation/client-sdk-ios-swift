@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SYRFTime"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "SYRFTime library for synchronized time."
 
   # This description is used to generate tags and improve search results.
@@ -41,7 +41,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.license      = "MIT (example)"
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -83,7 +83,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift.git", :tag => "0.0.7" }
+  spec.source       = { :git => "https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift.git", :tag => "0.0.8" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
