@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE0C1DE1BE1CDFABE3B10D25 /* Pods_SYRFTestAppFrameworks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1D902B8D6AAD59E6D49A4B /* Pods_SYRFTestAppFrameworks.framework */; };
+		C6ACA2C626973D0000B0481E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ACA2C526973D0000B0481E /* AppDelegate.swift */; };
+		C6ACA2C826973D0000B0481E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ACA2C726973D0000B0481E /* SceneDelegate.swift */; };
+		C6ACA2CA26973D0000B0481E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ACA2C926973D0000B0481E /* ViewController.swift */; };
+		C6ACA2CD26973D0000B0481E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6ACA2CB26973D0000B0481E /* Main.storyboard */; };
+		C6ACA2CF26973D0100B0481E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6ACA2CE26973D0100B0481E /* Assets.xcassets */; };
+		C6ACA2D226973D0100B0481E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6ACA2D026973D0100B0481E /* LaunchScreen.storyboard */; };
+		C6ACA3432697601200B0481E /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ACA33B2697601100B0481E /* TimeViewController.swift */; };
+		C6ACA3442697601200B0481E /* GeospatialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ACA33C2697601100B0481E /* GeospatialViewController.swift */; };
+		C6ACA3452697601200B0481E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ACA33D2697601100B0481E /* MainViewController.swift */; };
+		C6ACA3462697601200B0481E /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6ACA33E2697601100B0481E /* LocationViewController.xib */; };
+		C6ACA3472697601200B0481E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6ACA33F2697601200B0481E /* MainViewController.xib */; };
+		C6ACA3482697601200B0481E /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ACA3402697601200B0481E /* LocationViewController.swift */; };
+		C6ACA3492697601200B0481E /* GeospatialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6ACA3412697601200B0481E /* GeospatialViewController.xib */; };
+		C6ACA34A2697601200B0481E /* TimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6ACA3422697601200B0481E /* TimeViewController.xib */; };
+		C6ACA35F269761B800B0481E /* SYRFTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6ACA35C269761B800B0481E /* SYRFTime.framework */; };
+		C6ACA360269761B800B0481E /* SYRFGeospatial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6ACA35D269761B800B0481E /* SYRFGeospatial.framework */; };
+		C6ACA361269761B800B0481E /* SYRFLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6ACA35E269761B800B0481E /* SYRFLocation.framework */; };
+		C6ACA362269761C100B0481E /* SYRFGeospatial.framework in Resources */ = {isa = PBXBuildFile; fileRef = C6ACA35D269761B800B0481E /* SYRFGeospatial.framework */; };
+		C6ACA363269762A700B0481E /* SYRFLocation.framework in Resources */ = {isa = PBXBuildFile; fileRef = C6ACA35E269761B800B0481E /* SYRFLocation.framework */; };
+		C6ACA364269762A700B0481E /* SYRFTime.framework in Resources */ = {isa = PBXBuildFile; fileRef = C6ACA35C269761B800B0481E /* SYRFTime.framework */; };
+		C6ACA366269762D100B0481E /* SYRFGeospatial.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6ACA35D269761B800B0481E /* SYRFGeospatial.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C6ACA367269762D100B0481E /* SYRFLocation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6ACA35E269761B800B0481E /* SYRFLocation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C6ACA368269762D100B0481E /* SYRFTime.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6ACA35C269761B800B0481E /* SYRFTime.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C6ACA365269762C900B0481E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C6ACA366269762D100B0481E /* SYRFGeospatial.framework in CopyFiles */,
+				C6ACA367269762D100B0481E /* SYRFLocation.framework in CopyFiles */,
+				C6ACA368269762D100B0481E /* SYRFTime.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D707F2A65C198E42F6A7E2B /* Pods-SYRFTestAppFrameworks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYRFTestAppFrameworks.release.xcconfig"; path = "Target Support Files/Pods-SYRFTestAppFrameworks/Pods-SYRFTestAppFrameworks.release.xcconfig"; sourceTree = "<group>"; };
+		B4FDF4C19408B6A560063BCE /* Pods-SYRFTestAppFrameworks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYRFTestAppFrameworks.debug.xcconfig"; path = "Target Support Files/Pods-SYRFTestAppFrameworks/Pods-SYRFTestAppFrameworks.debug.xcconfig"; sourceTree = "<group>"; };
+		C6ACA2C226973D0000B0481E /* SYRFTestAppFrameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYRFTestAppFrameworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6ACA2C526973D0000B0481E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6ACA2C726973D0000B0481E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C6ACA2C926973D0000B0481E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6ACA2CC26973D0000B0481E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6ACA2CE26973D0100B0481E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6ACA2D126973D0100B0481E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6ACA2D326973D0100B0481E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6ACA33B2697601100B0481E /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeViewController.swift; path = ../../Common/TimeViewController.swift; sourceTree = "<group>"; };
+		C6ACA33C2697601100B0481E /* GeospatialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeospatialViewController.swift; path = ../../Common/GeospatialViewController.swift; sourceTree = "<group>"; };
+		C6ACA33D2697601100B0481E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../../Common/MainViewController.swift; sourceTree = "<group>"; };
+		C6ACA33E2697601100B0481E /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LocationViewController.xib; path = ../../Common/LocationViewController.xib; sourceTree = "<group>"; };
+		C6ACA33F2697601200B0481E /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = ../../Common/MainViewController.xib; sourceTree = "<group>"; };
+		C6ACA3402697601200B0481E /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationViewController.swift; path = ../../Common/LocationViewController.swift; sourceTree = "<group>"; };
+		C6ACA3412697601200B0481E /* GeospatialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GeospatialViewController.xib; path = ../../Common/GeospatialViewController.xib; sourceTree = "<group>"; };
+		C6ACA3422697601200B0481E /* TimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimeViewController.xib; path = ../../Common/TimeViewController.xib; sourceTree = "<group>"; };
+		C6ACA35C269761B800B0481E /* SYRFTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SYRFTime.framework; sourceTree = "<group>"; };
+		C6ACA35D269761B800B0481E /* SYRFGeospatial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SYRFGeospatial.framework; sourceTree = "<group>"; };
+		C6ACA35E269761B800B0481E /* SYRFLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SYRFLocation.framework; sourceTree = "<group>"; };
+		DC1D902B8D6AAD59E6D49A4B /* Pods_SYRFTestAppFrameworks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYRFTestAppFrameworks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6ACA2BF26973D0000B0481E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6ACA35F269761B800B0481E /* SYRFTime.framework in Frameworks */,
+				C6ACA361269761B800B0481E /* SYRFLocation.framework in Frameworks */,
+				C6ACA360269761B800B0481E /* SYRFGeospatial.framework in Frameworks */,
+				AE0C1DE1BE1CDFABE3B10D25 /* Pods_SYRFTestAppFrameworks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6ACA2B926973D0000B0481E = {
+			isa = PBXGroup;
+			children = (
+				C6ACA33A26975FFD00B0481E /* Common */,
+				C6ACA31826975F2700B0481E /* Frameworks */,
+				C6ACA2C426973D0000B0481E /* SYRFTestAppFrameworks */,
+				C6ACA2C326973D0000B0481E /* Products */,
+				E303CFC9CF865370699B10DA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C6ACA2C326973D0000B0481E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6ACA2C226973D0000B0481E /* SYRFTestAppFrameworks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6ACA2C426973D0000B0481E /* SYRFTestAppFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6ACA2C526973D0000B0481E /* AppDelegate.swift */,
+				C6ACA2C726973D0000B0481E /* SceneDelegate.swift */,
+				C6ACA2C926973D0000B0481E /* ViewController.swift */,
+				C6ACA2CB26973D0000B0481E /* Main.storyboard */,
+				C6ACA2CE26973D0100B0481E /* Assets.xcassets */,
+				C6ACA2D026973D0100B0481E /* LaunchScreen.storyboard */,
+				C6ACA2D326973D0100B0481E /* Info.plist */,
+			);
+			path = SYRFTestAppFrameworks;
+			sourceTree = "<group>";
+		};
+		C6ACA31826975F2700B0481E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6ACA35D269761B800B0481E /* SYRFGeospatial.framework */,
+				C6ACA35E269761B800B0481E /* SYRFLocation.framework */,
+				C6ACA35C269761B800B0481E /* SYRFTime.framework */,
+				DC1D902B8D6AAD59E6D49A4B /* Pods_SYRFTestAppFrameworks.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6ACA33A26975FFD00B0481E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C6ACA33C2697601100B0481E /* GeospatialViewController.swift */,
+				C6ACA3412697601200B0481E /* GeospatialViewController.xib */,
+				C6ACA3402697601200B0481E /* LocationViewController.swift */,
+				C6ACA33E2697601100B0481E /* LocationViewController.xib */,
+				C6ACA33D2697601100B0481E /* MainViewController.swift */,
+				C6ACA33F2697601200B0481E /* MainViewController.xib */,
+				C6ACA33B2697601100B0481E /* TimeViewController.swift */,
+				C6ACA3422697601200B0481E /* TimeViewController.xib */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E303CFC9CF865370699B10DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4FDF4C19408B6A560063BCE /* Pods-SYRFTestAppFrameworks.debug.xcconfig */,
+				3D707F2A65C198E42F6A7E2B /* Pods-SYRFTestAppFrameworks.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6ACA2C126973D0000B0481E /* SYRFTestAppFrameworks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6ACA2D626973D0100B0481E /* Build configuration list for PBXNativeTarget "SYRFTestAppFrameworks" */;
+			buildPhases = (
+				501F93CDA88591B50443AC6B /* [CP] Check Pods Manifest.lock */,
+				C6ACA2BE26973D0000B0481E /* Sources */,
+				C6ACA2BF26973D0000B0481E /* Frameworks */,
+				C6ACA2C026973D0000B0481E /* Resources */,
+				278EEE58AA7E56927E2B1BEA /* [CP] Embed Pods Frameworks */,
+				C6ACA365269762C900B0481E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYRFTestAppFrameworks;
+			productName = SYRFTestAppFrameworks;
+			productReference = C6ACA2C226973D0000B0481E /* SYRFTestAppFrameworks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6ACA2BA26973D0000B0481E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C6ACA2C126973D0000B0481E = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = C6ACA2BD26973D0000B0481E /* Build configuration list for PBXProject "SYRFTestAppFrameworks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6ACA2B926973D0000B0481E;
+			productRefGroup = C6ACA2C326973D0000B0481E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6ACA2C126973D0000B0481E /* SYRFTestAppFrameworks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6ACA2C026973D0000B0481E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6ACA363269762A700B0481E /* SYRFLocation.framework in Resources */,
+				C6ACA364269762A700B0481E /* SYRFTime.framework in Resources */,
+				C6ACA362269761C100B0481E /* SYRFGeospatial.framework in Resources */,
+				C6ACA2D226973D0100B0481E /* LaunchScreen.storyboard in Resources */,
+				C6ACA2CF26973D0100B0481E /* Assets.xcassets in Resources */,
+				C6ACA3472697601200B0481E /* MainViewController.xib in Resources */,
+				C6ACA3492697601200B0481E /* GeospatialViewController.xib in Resources */,
+				C6ACA34A2697601200B0481E /* TimeViewController.xib in Resources */,
+				C6ACA2CD26973D0000B0481E /* Main.storyboard in Resources */,
+				C6ACA3462697601200B0481E /* LocationViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		278EEE58AA7E56927E2B1BEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SYRFTestAppFrameworks/Pods-SYRFTestAppFrameworks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SYRFTestAppFrameworks/Pods-SYRFTestAppFrameworks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SYRFTestAppFrameworks/Pods-SYRFTestAppFrameworks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		501F93CDA88591B50443AC6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SYRFTestAppFrameworks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6ACA2BE26973D0000B0481E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6ACA3482697601200B0481E /* LocationViewController.swift in Sources */,
+				C6ACA3442697601200B0481E /* GeospatialViewController.swift in Sources */,
+				C6ACA2CA26973D0000B0481E /* ViewController.swift in Sources */,
+				C6ACA3432697601200B0481E /* TimeViewController.swift in Sources */,
+				C6ACA3452697601200B0481E /* MainViewController.swift in Sources */,
+				C6ACA2C626973D0000B0481E /* AppDelegate.swift in Sources */,
+				C6ACA2C826973D0000B0481E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6ACA2CB26973D0000B0481E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6ACA2CC26973D0000B0481E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6ACA2D026973D0100B0481E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6ACA2D126973D0100B0481E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6ACA2D426973D0100B0481E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6ACA2D526973D0100B0481E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6ACA2D726973D0100B0481E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4FDF4C19408B6A560063BCE /* Pods-SYRFTestAppFrameworks.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 797Z2AUN37;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = SYRFTestAppFrameworks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scopic.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6ACA2D826973D0100B0481E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D707F2A65C198E42F6A7E2B /* Pods-SYRFTestAppFrameworks.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 797Z2AUN37;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = SYRFTestAppFrameworks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scopic.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6ACA2BD26973D0000B0481E /* Build configuration list for PBXProject "SYRFTestAppFrameworks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6ACA2D426973D0100B0481E /* Debug */,
+				C6ACA2D526973D0100B0481E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6ACA2D626973D0100B0481E /* Build configuration list for PBXNativeTarget "SYRFTestAppFrameworks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6ACA2D726973D0100B0481E /* Debug */,
+				C6ACA2D826973D0100B0481E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6ACA2BA26973D0000B0481E /* Project object */;
+}

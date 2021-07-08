@@ -1,0 +1,50 @@
+workspace 'SYRFTestApp.xcworkspace'
+platform :ios, '13.0'
+
+def shared_pods
+
+end
+
+def test_pods
+
+  pod 'SYRFLocation'
+  pod 'SYRFTime'
+  pod 'SYRFGeospatial'
+  
+end
+
+def test_frameworks
+
+    pod 'Kronos'
+    pod 'GEOSwift'
+
+end
+
+project 'SYRFTestAppPods/SYRFTestAppPods.xcodeproj'
+project 'SYRFTestAppFrameworks/SYRFTestAppFrameworks.xcodeproj'
+
+target :SYRFTestAppPods do
+    use_frameworks!
+  project 'SYRFTestAppPods/SYRFTestAppPods.xcodeproj'
+  shared_pods
+  test_pods
+  
+end
+
+target :SYRFTestAppFrameworks do
+    use_frameworks!
+    project 'SYRFTestAppFrameworks/SYRFTestAppFrameworks.xcodeproj'
+    shared_pods
+    test_frameworks
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      if Gem::Version.new('9.0') > Gem::Version.new(config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'])
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+      end
+    end
+  end
+end
+

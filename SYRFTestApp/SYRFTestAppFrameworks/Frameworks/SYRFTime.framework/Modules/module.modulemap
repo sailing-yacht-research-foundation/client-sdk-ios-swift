@@ -1,0 +1,11 @@
+framework module SYRFTime {
+  umbrella header "SYRFTime.h"
+
+  export *
+  module * { export * }
+}
+
+module SYRFTime.Swift {
+    header "SYRFTime-Swift.h"
+    requires objc
+}

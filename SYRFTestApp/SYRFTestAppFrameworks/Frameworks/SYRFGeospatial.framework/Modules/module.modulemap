@@ -1,0 +1,11 @@
+framework module SYRFGeospatial {
+  umbrella header "SYRFGeospatial.h"
+
+  export *
+  module * { export * }
+}
+
+module SYRFGeospatial.Swift {
+    header "SYRFGeospatial-Swift.h"
+    requires objc
+}

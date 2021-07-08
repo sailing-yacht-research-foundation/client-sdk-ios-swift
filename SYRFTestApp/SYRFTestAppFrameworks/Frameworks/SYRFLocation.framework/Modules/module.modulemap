@@ -1,0 +1,11 @@
+framework module SYRFLocation {
+  umbrella header "SYRFLocation.h"
+
+  export *
+  module * { export * }
+}
+
+module SYRFLocation.Swift {
+    header "SYRFLocation-Swift.h"
+    requires objc
+}

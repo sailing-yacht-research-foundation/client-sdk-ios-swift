@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="SYRFTestAppPods" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="stA-40-FdK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Da8-HS-Lpq">
+                    <rect key="frame" x="169" y="285" width="76" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Location"/>
+                    <connections>
+                        <action selector="onLocationPressed:" destination="-2" eventType="touchUpInside" id="lRS-p1-TUf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpf-Rf-aBz">
+                    <rect key="frame" x="185" y="361" width="44" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Time"/>
+                    <connections>
+                        <action selector="onTimePressed:" destination="-2" eventType="touchUpInside" id="kmz-yh-idn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QM7-IO-SDF">
+                    <rect key="frame" x="160" y="437" width="94" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Geospatial"/>
+                    <connections>
+                        <action selector="onGeospatialPressed:" destination="-2" eventType="touchUpInside" id="QjB-1L-hsn"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test each SDK by selecting its specific button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krG-0p-Jnk">
+                    <rect key="frame" x="50" y="144" width="314" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="QM7-IO-SDF" firstAttribute="top" secondItem="Xpf-Rf-aBz" secondAttribute="bottom" constant="40" id="26A-HE-caD"/>
+                <constraint firstItem="Da8-HS-Lpq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7Xd-Wl-tWy"/>
+                <constraint firstItem="krG-0p-Jnk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="KeA-PF-Xpm"/>
+                <constraint firstItem="krG-0p-Jnk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="100" id="U5g-mN-crH"/>
+                <constraint firstItem="Da8-HS-Lpq" firstAttribute="top" secondItem="krG-0p-Jnk" secondAttribute="bottom" constant="100" id="cR4-cZ-mHT"/>
+                <constraint firstItem="Xpf-Rf-aBz" firstAttribute="top" secondItem="Da8-HS-Lpq" secondAttribute="bottom" constant="40" id="h0U-HY-SwG"/>
+                <constraint firstItem="Xpf-Rf-aBz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="h2d-rp-9yY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="krG-0p-Jnk" secondAttribute="trailing" constant="50" id="urK-Vg-bBq"/>
+                <constraint firstItem="QM7-IO-SDF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ywI-FP-TsY"/>
+            </constraints>
+            <point key="canvasLocation" x="35" y="-36"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
