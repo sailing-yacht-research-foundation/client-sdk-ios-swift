@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint SYRFLocation.podspec' to ensure this is a
+#  Be sure to run `pod spec lint SYRFGeospatial.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "SYRFLocation"
+  spec.name         = "SYRFGeospatial"
   spec.version      = "0.0.8"
-  spec.summary      = "SYRFLocation Library for Core Location and Core Motion."
+  spec.summary      = "SYRFGeospatial library for geometrical calculations."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,9 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-	SYRFLocation Library for Core Location and Core Motion.
-	The SYRF Client SDK simplifies tracker management for developers.
-			DESC
+                   SYRFGeospatial Library for Geospatial calculations.
+                   The library provides geospatial geometry calculations.
+                   DESC
 
   spec.homepage     = "https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -67,8 +67,7 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios
   spec.platform     = :ios, "13.0"
-  spec.swift_versions       = "5.0"
-
+  spec.swift_versions = "5.0"
 
   #  When using multiple platforms
   spec.ios.deployment_target = "13.0"
@@ -94,10 +93,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "SYRFLocation", "SYRFLocation/SYRFLocation/**/*.{swift}"
-  spec.exclude_files = "SYRFLocation/Exclude"
+  spec.source_files  = "SYRFGeospatial", "SYRFGeospatial/SYRFGeospatial/**/*.{swift}"
+  spec.exclude_files = "SYRFGeospatial/Exclude"
 
-  # spec.public_header_files = "SYRFLocation/SYRFLocation/*.h"
+  # spec.public_header_files = "SYRFGeospatial/SYRFGeospatial/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -108,7 +107,7 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # spec.resource  = "icon.png"
+  spec.resource  = "SYRFGeospatial/Libraries/Turf/dist/Turf.bundle.js"
   # spec.resources = "Resources/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -136,6 +135,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency "GEOSwift", "~> 8.1.0"
 
 end

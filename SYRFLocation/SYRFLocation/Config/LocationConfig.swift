@@ -41,7 +41,7 @@ public class LocationManagerConfig {
         self.distanceFilter = kCLDistanceFilterNone
         self.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         self.pauseUpdatesAutomatically = false
-        self.allowUpdatesInBackground = true
+        self.allowUpdatesInBackground = false
         self.allowIndicatorInBackground = true
     }
 
