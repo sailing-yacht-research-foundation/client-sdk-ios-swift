@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SensorsAcceleroManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SensorsAcceleroManager" class="dashAnchor"></a>
+    <a title="SensorsAcceleroManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SYRFLocation 0.0.8 Docs</a> (96% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SYRFLocation Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SensorsAcceleroManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DeviceManager.html">DeviceManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HeadingManager.html">HeadingManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HeadingManagerConfig.html">HeadingManagerConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocationManager.html">LocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocationManagerConfig.html">LocationManagerConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PermissionsManager.html">PermissionsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RegionManager.html">RegionManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RegionManagerConfig.html">RegionManagerConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SYRFCircularRegion.html">SYRFCircularRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SYRFCoordinate.html">SYRFCoordinate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SYRFHeading.html">SYRFHeading</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SYRFHeadingRaw.html">SYRFHeadingRaw</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SYRFLocation.html">SYRFLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@SYRFLocation@objc(cs)SYRFRegion">SYRFRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SYRFSensorsAcceleroData.html">SYRFSensorsAcceleroData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SYRFSensorsGyroData.html">SYRFSensorsGyroData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SYRFSensorsMagnetoData.html">SYRFSensorsMagnetoData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SensorsAcceleroConfig.html">SensorsAcceleroConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SensorsAcceleroManager.html">SensorsAcceleroManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SensorsGyroConfig.html">SensorsGyroConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SensorsGyroManager.html">SensorsGyroManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SensorsMagnetoConfig.html">SensorsMagnetoConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SensorsMagnetoManager.html">SensorsMagnetoManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/PermissionsAccuracy.html">PermissionsAccuracy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PermissionsAuthorization.html">PermissionsAuthorization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PermissionsType.html">PermissionsType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SYRFHeadingError.html">SYRFHeadingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SYRFLocationError.html">SYRFLocationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SYRFRegionError.html">SYRFRegionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SYRFRegionType.html">SYRFRegionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SYRFSensorsAcceleroError.html">SYRFSensorsAcceleroError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SYRFSensorsGyroError.html">SYRFSensorsGyroError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SYRFSensorsMagnetoError.html">SYRFSensorsMagnetoError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/HeadingDelegate.html">HeadingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LocationDelegate.html">LocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PermissionsDelegate.html">PermissionsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RegionDelegate.html">RegionDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SensorsAcceleroDelegate.html">SensorsAcceleroDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SensorsGyroDelegate.html">SensorsGyroDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SensorsMagnetoDelegate.html">SensorsMagnetoDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SensorsAcceleroManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SensorsAcceleroManager</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Manager class responsible for providing accelerometer data information.</p>
+
+<p>Accelerometer monitoring is reported based on the SensorsAcceleroConfig.
+Accelerometer monitoring is done on a background queue or the main queue and provides new data at a specified interval</p>
+
+<p>A normal setup for the getting accelerometer data would be:</p>
+
+<ul>
+<li>set up the SensorsAcceleroDelegate, as data updates are passed back through the delegate either set up at initialization time or by using the stored property</li>
+<li>configure the SensorsAcceleroManager through the configure method</li>
+<li>request acceleromater data updates through the startAcceleroUpdates method</li>
+<li>acceleroUpdated is called each time new accelerometer data is obtained</li>
+<li>when finished request to stop the updates through the stopAcceleroUpdates method</li>
+</ul>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><p>Properties</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SYRFLocation22SensorsAcceleroManagerC8delegateAA0bC8Delegate_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SYRFLocation22SensorsAcceleroManagerC8delegateAA0bC8Delegate_pSgvp">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The manager delegate, used to pass back accelerometer data updates as they are gathered based on the update interval</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SensorsAcceleroDelegate.html">SensorsAcceleroDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Lifecycle"></a>
+                <a name="//apple_ref/swift/Section/Lifecycle" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Lifecycle"></a>
+                  <h3 class="section-name"><p>Lifecycle</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SYRFLocation@objc(cs)SensorsAcceleroManager(im)init"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SYRFLocation@objc(cs)SensorsAcceleroManager(im)init">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default initializer
+Default initialization of the core motion manager and its configuration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SYRFLocation22SensorsAcceleroManagerC8delegateAcA0bC8Delegate_p_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(delegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SYRFLocation22SensorsAcceleroManagerC8delegateAcA0bC8Delegate_p_tcfc">init(delegate:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializer to set up the manager delegate
+Uses the default initializer</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SensorsAcceleroDelegate.html">SensorsAcceleroDelegate</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The manager delegate value, used for passing back accelerometer monitoring updates</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Public Methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public%20Methods"></a>
+                  <h3 class="section-name"><p>Public Methods</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SYRFLocation22SensorsAcceleroManagerC9configureyyAA0bC6ConfigCF"></a>
+                    <a name="//apple_ref/swift/Method/configure(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SYRFLocation22SensorsAcceleroManagerC9configureyyAA0bC6ConfigCF">configure(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provide the manager with a specific SensorsAcceleroConfig object
+The configuration values are used for the core motion manager</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span><span class="n">_</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/SensorsAcceleroConfig.html">SensorsAcceleroConfig</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The manager configuration values</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SYRFLocation22SensorsAcceleroManagerC05startC7UpdatesyyF"></a>
+                    <a name="//apple_ref/swift/Method/startAcceleroUpdates()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SYRFLocation22SensorsAcceleroManagerC05startC7UpdatesyyF">startAcceleroUpdates()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Entry point for monitoring accelerometer updates based on the default or custom configuration</p>
+
+<p>Before starting accelerometer data gathering the availability of core motion functionality is checked.
+If cannot proceed with monitoring the accelerometer sensor, the manager delegate will be informed of the failing error</p>
+
+<p>If accelerometer data can be retrieved the acceleroUpdated method of the delegate is called each time a new data is obtained
+The accelerometer data updates are provided using either a background queue or the main queue as configured</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startAcceleroUpdates</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12SYRFLocation22SensorsAcceleroManagerC04stopC7UpdatesyyF"></a>
+                    <a name="//apple_ref/swift/Method/stopAcceleroUpdates()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SYRFLocation22SensorsAcceleroManagerC04stopC7UpdatesyyF">stopAcceleroUpdates()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Entry point for stopping accelerometer data updates</p>
+
+<p>Before stopping accelerometer updates the availability of core motion functionality is checked.
+If cannot proceed with stopping the accelerometer updates the manager delegate will be informed of the failing error</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopAcceleroUpdates</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift" target="_blank" rel="external">Scopic Software</a>. All rights reserved. (Last updated: 2021-07-16)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

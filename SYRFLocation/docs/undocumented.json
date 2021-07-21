@@ -1,0 +1,61 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/radurad/Development/Git/SYRF/iOS/SYRFLocation/SYRFLocation/Permissions/PermissionsManager.swift",
+      "line": 197,
+      "symbol": "PermissionsManager.locationManager(_:didChangeAuthorization:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/radurad/Development/Git/SYRF/iOS/SYRFLocation/SYRFLocation/Permissions/PermissionsManager.swift",
+      "line": 201,
+      "symbol": "PermissionsManager.locationManagerDidChangeAuthorization(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/radurad/Development/Git/SYRF/iOS/SYRFLocation/SYRFLocation/Services/HeadingManager.swift",
+      "line": 127,
+      "symbol": "HeadingManager.locationManager(_:didUpdateHeading:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/radurad/Development/Git/SYRF/iOS/SYRFLocation/SYRFLocation/Services/HeadingManager.swift",
+      "line": 131,
+      "symbol": "HeadingManager.locationManager(_:didFailWithError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/radurad/Development/Git/SYRF/iOS/SYRFLocation/SYRFLocation/Services/LocationManager.swift",
+      "line": 199,
+      "symbol": "LocationManager.locationManager(_:didUpdateLocations:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/radurad/Development/Git/SYRF/iOS/SYRFLocation/SYRFLocation/Services/LocationManager.swift",
+      "line": 211,
+      "symbol": "LocationManager.locationManager(_:didFailWithError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/radurad/Development/Git/SYRF/iOS/SYRFLocation/SYRFLocation/Services/RegionManager.swift",
+      "line": 161,
+      "symbol": "RegionManager.locationManager(_:didEnterRegion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/radurad/Development/Git/SYRF/iOS/SYRFLocation/SYRFLocation/Services/RegionManager.swift",
+      "line": 167,
+      "symbol": "RegionManager.locationManager(_:didExitRegion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/radurad/Development/Git/SYRF/iOS"
+}
