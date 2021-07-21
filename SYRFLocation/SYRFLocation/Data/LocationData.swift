@@ -75,11 +75,17 @@ public class SYRFLocation {
     /// Radius of altitude precision in meters
     public var verticalAccuracy: Double!
     
+    /// Instantaneous speed of the device in meters/second unit
+    public var speed: Double!
+    
     /// Precision of speed
     public var speedAccuracy: Double!
     
     /// Precision of course
     public var courseAccuracy: Double!
+    
+    /// The direction in which the device is traveling in degrees to True North
+    public var courseHeading: Double!
     
     /// The timestamp at which the location data was determined
     public var timestamp: Date!
@@ -94,8 +100,10 @@ public class SYRFLocation {
         self.floor = 0
         self.horizontalAccuracy = 0
         self.verticalAccuracy = 0
+        self.speed = 0
         self.speedAccuracy = 0
         self.courseAccuracy = 0
+        self.courseHeading = 0
         self.timestamp = Date()
     }
     
@@ -112,6 +120,7 @@ public class SYRFLocation {
         self.floor = location.floor?.level
         self.horizontalAccuracy = location.horizontalAccuracy
         self.verticalAccuracy = location.verticalAccuracy
+        self.speed = location.speed
         self.speedAccuracy = location.speedAccuracy
         self.timestamp = location.timestamp
         if #available(iOS 13.4, *) {
@@ -119,6 +128,7 @@ public class SYRFLocation {
         } else {
             self.courseAccuracy = 0
         }
+        self.courseHeading = location.course
     }
 }
 
