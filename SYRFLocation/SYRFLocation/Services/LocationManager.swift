@@ -198,7 +198,7 @@ public class LocationManager: NSObject {
      */
     private func updateRecentLocation() {
         if let lastLocation = self.locationManager.location {
-            self.delegate?.locationUpdated(SYRFLocation(location: lastLocation))
+            self.delegate?.currentLocationUpdated(SYRFLocation(location: lastLocation))
         }
     }
 }
