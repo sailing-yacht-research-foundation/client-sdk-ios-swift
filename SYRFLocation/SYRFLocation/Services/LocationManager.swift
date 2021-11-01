@@ -86,6 +86,8 @@ public class LocationManager: NSObject {
      Provide the manager with a specific LocationManagerConfig object
      The configuration values are used for the core location manager
      
+     In addition, update location delegate with most recent location, if available
+     
      - Parameters:
         - configuration: The manager configuration values
      */
@@ -110,6 +112,8 @@ public class LocationManager: NSObject {
         if let allowIndicator = configuration.allowIndicatorInBackground {
             self.locationManager.showsBackgroundLocationIndicator = allowIndicator
         }
+        
+        self.updateRecentLocation()
     }
     
     /**
@@ -136,6 +140,8 @@ public class LocationManager: NSObject {
      If cannot proceed with monitoring heading updates the manager delegate will be informed of the failing error
      
      If location updates can be retrieved the locationUpdated method of the delegate is called each time a new location is obtained that follows the configuration
+     
+     In addition, update location delegate with most recent location, if available
      */
     public func startLocationUpdates() {
         let (canUse, error) = LocationUtils.canUseCoreLocation()
@@ -147,6 +153,8 @@ public class LocationManager: NSObject {
                 self.locationManager.startUpdatingLocation()
                 self.isUpdating = true
             }
+            
+            self.updateRecentLocation()
         } else if let error = error {
             self.delegate?.locationFailed(error)
         }
@@ -173,25 +181,6 @@ public class LocationManager: NSObject {
         }
     }
     
-    /**
-     Entry point for retrieving the last known location information
-     
-     - Returns:
-        The most recent retrieve location
-        Can be nil if not recent location available
-     */
-    public func getRecentLocation() -> SYRFLocation? {
-        let (canUse, error) = LocationUtils.canUseCoreLocation()
-        if (canUse) {
-            if let lastLocation = self.locationManager.location {
-                return SYRFLocation(location: lastLocation)
-            }
-        } else if let error = error {
-            self.delegate?.locationFailed(error)
-        }
-        return nil
-    }
-    
     //MARK: - Private Methods
     
     /**
@@ -203,6 +192,16 @@ public class LocationManager: NSObject {
             return self.configuration.activityType == .other
         } else {
             return false
+        }
+    }
+    
+    /**
+     Retrieve most recent location information
+     Notify the delegate if a location a available
+     */
+    private func updateRecentLocation() {
+        if let lastLocation = self.locationManager.location {
+            self.delegate?.locationUpdated(SYRFLocation(location: lastLocation))
         }
     }
 }
