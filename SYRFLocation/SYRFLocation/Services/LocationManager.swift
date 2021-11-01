@@ -173,6 +173,27 @@ public class LocationManager: NSObject {
         }
     }
     
+    /**
+     Entry point for retrieving the last known location information
+     
+     - Returns:
+        The most recent retrieve location
+        Can be nil if not recent location available
+     */
+    public func getRecentLocation() -> SYRFLocation? {
+        let (canUse, error) = LocationUtils.canUseCoreLocation()
+        if (canUse) {
+            if let lastLocation = self.locationManager.location {
+                return SYRFLocation(location: lastLocation)
+            } else {
+                return nil
+            }
+        } else if let error = error {
+            return nil
+            self.delegate?.locationFailed(error)
+        }
+    }
+    
     //MARK: - Private Methods
     
     /**
