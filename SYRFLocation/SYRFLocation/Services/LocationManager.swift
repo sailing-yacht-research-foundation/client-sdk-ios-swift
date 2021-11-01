@@ -86,8 +86,6 @@ public class LocationManager: NSObject {
      Provide the manager with a specific LocationManagerConfig object
      The configuration values are used for the core location manager
      
-     In addition, update location delegate with most recent location, if available
-     
      - Parameters:
         - configuration: The manager configuration values
      */
@@ -112,8 +110,6 @@ public class LocationManager: NSObject {
         if let allowIndicator = configuration.allowIndicatorInBackground {
             self.locationManager.showsBackgroundLocationIndicator = allowIndicator
         }
-        
-        self.updateRecentLocation()
     }
     
     /**
@@ -122,12 +118,16 @@ public class LocationManager: NSObject {
      If the current location can be retrieved the currentLocationUpdated method of the delegate is called
      If the current location cannot be retrieved due to permissions, access or internal error the locationFailed method of the delegate is called
      
+     In addition to requesting the current location, use the most recent location as well, if available
+     
      */
     public func getCurrentLocation() {
         let (canUse, error) = LocationUtils.canUseCoreLocation()
         if (canUse) {
             self.locationManager.requestLocation()
             self.isGettingLocation = true
+            
+            self.updateRecentLocation()
         } else if let error = error {
             self.delegate?.locationFailed(error)
         }
@@ -141,7 +141,6 @@ public class LocationManager: NSObject {
      
      If location updates can be retrieved the locationUpdated method of the delegate is called each time a new location is obtained that follows the configuration
      
-     In addition, update location delegate with most recent location, if available
      */
     public func startLocationUpdates() {
         let (canUse, error) = LocationUtils.canUseCoreLocation()
@@ -153,8 +152,6 @@ public class LocationManager: NSObject {
                 self.locationManager.startUpdatingLocation()
                 self.isUpdating = true
             }
-            
-            self.updateRecentLocation()
         } else if let error = error {
             self.delegate?.locationFailed(error)
         }
