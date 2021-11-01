@@ -185,13 +185,11 @@ public class LocationManager: NSObject {
         if (canUse) {
             if let lastLocation = self.locationManager.location {
                 return SYRFLocation(location: lastLocation)
-            } else {
-                return nil
             }
         } else if let error = error {
-            return nil
             self.delegate?.locationFailed(error)
         }
+        return nil
     }
     
     //MARK: - Private Methods
