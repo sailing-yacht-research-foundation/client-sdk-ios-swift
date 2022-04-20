@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreLocation
+import UIKit
 
 /**
  Location Coordinates data
@@ -90,6 +91,9 @@ public class SYRFLocation {
     /// The timestamp at which the location data was determined
     public var timestamp: Date!
     
+    /// The battery level of device. Value range:  0 .. 1.0. -1.0 if UIDeviceBatteryStateUnknown
+    public var batteryLevel: Double!
+
     /**
      Default initializer
      Location data is set to default 0 values
@@ -105,6 +109,7 @@ public class SYRFLocation {
         self.courseAccuracy = 0
         self.courseHeading = 0
         self.timestamp = Date()
+        self.batteryLevel = 0
     }
     
     /**
@@ -129,6 +134,7 @@ public class SYRFLocation {
             self.courseAccuracy = 0
         }
         self.courseHeading = location.course
+        self.batteryLevel = Double(UIDevice.current.batteryLevel)
     }
 }
 

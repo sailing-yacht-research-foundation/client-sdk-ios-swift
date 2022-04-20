@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreLocation
+import UIKit
 
 /**
  Manager class responsible for providing location information monitoring and updates.
@@ -143,6 +144,7 @@ public class LocationManager: NSObject {
      
      */
     public func startLocationUpdates() {
+        UIDevice.current.isBatteryMonitoringEnabled = true
         let (canUse, error) = LocationUtils.canUseCoreLocation()
         if (canUse) {
             if (self.shouldUseMonitoring()) {
@@ -164,6 +166,7 @@ public class LocationManager: NSObject {
      If cannot proceed with stopping location updates monitoring the manager delegate will be informed of the failing error
      */
     public func stopLocationUpdates() {
+        UIDevice.current.isBatteryMonitoringEnabled = false
         let (canUse, error) = LocationUtils.canUseCoreLocation()
         if (canUse) {
             if (self.isMonitoring) {
