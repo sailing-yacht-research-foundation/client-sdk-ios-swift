@@ -1,0 +1,16 @@
+PODS:
+  - Kronos (4.2.1)
+
+DEPENDENCIES:
+  - Kronos
+
+SPEC REPOS:
+  trunk:
+    - Kronos
+
+SPEC CHECKSUMS:
+  Kronos: 0ca73a1c00dc9a49a0bab4a6ed42f282562a7058
+
+PODFILE CHECKSUM: cf59cad0bf97847c012350e23f3c22a6a53f183c
+
+COCOAPODS: 1.10.1
