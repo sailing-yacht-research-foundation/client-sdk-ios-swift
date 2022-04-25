@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A2ACEAE281447B5008FAB91 /* SYRFDeviceInfo.docc in Sources */ = {isa = PBXBuildFile; fileRef = 1A2ACEAD281447B5008FAB91 /* SYRFDeviceInfo.docc */; };
 		1A2ACEB4281447B5008FAB91 /* SYRFDeviceInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2ACEA9281447B5008FAB91 /* SYRFDeviceInfo.framework */; };
 		1A2ACEB9281447B5008FAB91 /* SYRFDeviceInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2ACEB8281447B5008FAB91 /* SYRFDeviceInfoTests.swift */; };
 		1A2ACEBA281447B5008FAB91 /* SYRFDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2ACEAC281447B5008FAB91 /* SYRFDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,7 +28,6 @@
 /* Begin PBXFileReference section */
 		1A2ACEA9281447B5008FAB91 /* SYRFDeviceInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SYRFDeviceInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A2ACEAC281447B5008FAB91 /* SYRFDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYRFDeviceInfo.h; sourceTree = "<group>"; };
-		1A2ACEAD281447B5008FAB91 /* SYRFDeviceInfo.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SYRFDeviceInfo.docc; sourceTree = "<group>"; };
 		1A2ACEB3281447B5008FAB91 /* SYRFDeviceInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYRFDeviceInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A2ACEB8281447B5008FAB91 /* SYRFDeviceInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYRFDeviceInfoTests.swift; sourceTree = "<group>"; };
 		1A5E36192814571B00D86728 /* BatteryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryManager.swift; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				1A5E365C281463D700D86728 /* Extensions */,
 				1A5E3618281454E000D86728 /* Services */,
 				1A2ACEAC281447B5008FAB91 /* SYRFDeviceInfo.h */,
-				1A2ACEAD281447B5008FAB91 /* SYRFDeviceInfo.docc */,
 			);
 			path = SYRFDeviceInfo;
 			sourceTree = "<group>";
@@ -220,7 +217,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A5E365E2814640800D86728 /* UIDevice+PhoneModel.swift in Sources */,
-				1A2ACEAE281447B5008FAB91 /* SYRFDeviceInfo.docc in Sources */,
 				1A5E361C2814593C00D86728 /* DeviceInfoManager.swift in Sources */,
 				1A5E361A2814571B00D86728 /* BatteryManager.swift in Sources */,
 			);

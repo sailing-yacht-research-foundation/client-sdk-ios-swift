@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                   SYRFDeviceInfo library for getting device info..
+                   SYRFDeviceInfo library for getting device info.
                    The library provides access to the different properties of the device (os, battery etc).
                    DESC
 
@@ -95,8 +95,6 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "SYRFDeviceInfo", "SYRFDeviceInfo/SYRFDeviceInfo/**/*.{swift}"
   spec.exclude_files = "SYRFDeviceInfo/Exclude"
-
-  # spec.public_header_files = "SYRFGeospatial/SYRFGeospatial/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
