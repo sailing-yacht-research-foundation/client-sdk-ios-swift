@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 public class BatteryManager: NSObject {
-    
+
     public func enableBatteryMonitoring() {
         UIDevice.current.isBatteryMonitoringEnabled = true
     }

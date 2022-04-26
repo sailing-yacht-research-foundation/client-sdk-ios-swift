@@ -104,5 +104,4 @@ public extension UIDevice {
 
         return mapToDevice(identifier: identifier)
     }()
-
 }
