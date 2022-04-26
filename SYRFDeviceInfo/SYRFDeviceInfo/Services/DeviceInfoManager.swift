@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 
-public class DeviceInfoManager {
+public class DeviceInfoManager: NSObject {
+
     public func getPhoneModel() -> String {
         return UIDevice.modelName
     }
