@@ -31,6 +31,8 @@ public class PermissionsManager: NSObject {
     /// The root object providing access to Core Location functionality
     private let locationManager: CLLocationManager!
     
+    private var requestLocationAuthorizationCallback: ((CLAuthorizationStatus) -> Void)?
+
     //MARK: - Lifecycle
     
     /**
@@ -98,7 +100,16 @@ public class PermissionsManager: NSObject {
     public func requestAuthorization(_ type: PermissionsType) {
         switch type {
         case .always:
-            self.locationManager.requestAlwaysAuthorization()
+            if #available(iOS 13.4, *) {
+                self.requestLocationAuthorizationCallback = { status in
+                    if status == .authorizedWhenInUse {
+                        self.locationManager.requestAlwaysAuthorization()
+                    }
+                }
+                self.locationManager.requestWhenInUseAuthorization()
+            } else {
+                self.locationManager.requestAlwaysAuthorization()
+            }
         case .whenInUse:
             self.locationManager.requestWhenInUseAuthorization()
         }
@@ -199,6 +210,7 @@ extension PermissionsManager: CLLocationManagerDelegate {
     }
     
     public func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        self.requestLocationAuthorizationCallback?(CLLocationManager.authorizationStatus())
         self.delegate?.authorizationUpdated(self.getAuthorizationStatus())
         self.delegate?.accuracyUpdated(self.getAccuracyStatus())
     }

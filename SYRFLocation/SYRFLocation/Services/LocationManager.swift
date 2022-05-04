@@ -118,12 +118,16 @@ public class LocationManager: NSObject {
      If the current location can be retrieved the currentLocationUpdated method of the delegate is called
      If the current location cannot be retrieved due to permissions, access or internal error the locationFailed method of the delegate is called
      
+     In addition to requesting the current location, use the most recent location as well, if available
+     
      */
     public func getCurrentLocation() {
         let (canUse, error) = LocationUtils.canUseCoreLocation()
         if (canUse) {
             self.locationManager.requestLocation()
             self.isGettingLocation = true
+            
+            self.updateRecentLocation()
         } else if let error = error {
             self.delegate?.locationFailed(error)
         }
@@ -136,6 +140,7 @@ public class LocationManager: NSObject {
      If cannot proceed with monitoring heading updates the manager delegate will be informed of the failing error
      
      If location updates can be retrieved the locationUpdated method of the delegate is called each time a new location is obtained that follows the configuration
+     
      */
     public func startLocationUpdates() {
         let (canUse, error) = LocationUtils.canUseCoreLocation()
@@ -184,6 +189,16 @@ public class LocationManager: NSObject {
             return self.configuration.activityType == .other
         } else {
             return false
+        }
+    }
+    
+    /**
+     Retrieve most recent location information
+     Notify the delegate if a location a available
+     */
+    private func updateRecentLocation() {
+        if let lastLocation = self.locationManager.location {
+            self.delegate?.currentLocationUpdated(SYRFLocation(location: lastLocation))
         }
     }
 }

@@ -2,10 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SYRFDeviceInfo/SYRFDeviceInfo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SYRFLocation/SYRFLocation.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:SYRFTime/SYRFTime.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SYRFGeospatial/SYRFGeospatial.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

@@ -1,25 +1,43 @@
 workspace 'SYRFClient.xcworkspace'
 platform :ios, '13.0'
 
+source 'https://github.com/Cocoapods/Specs.git'
+
 def shared_pods
 
 end
 
 def time_pods
 
-  pod 'Kronos'
+    pod 'Kronos'
   
+end
+
+def geospacial_pods
+
+    pod 'GEOSwift'
+
 end
 
 project 'SYRFTime/SYRFTime.xcodeproj'
 project 'SYRFLocation/SYRFLocation.xcodeproj'
+project 'SYRFGeospatial/SYRFGeospatial.xcodeproj'
 
 target :SYRFTime do
 
-  project 'SYRFTime/SYRFTime.xcodeproj'
-  shared_pods
-  time_pods
+    project 'SYRFTime/SYRFTime.xcodeproj'
+    shared_pods
+    time_pods
   
+end
+
+target :SYRFGeospatial do
+
+    use_frameworks!
+    project 'SYRFGeospatial/SYRFGeospatial.xcodeproj'
+    shared_pods
+    geospacial_pods
+
 end
 
 post_install do |installer|

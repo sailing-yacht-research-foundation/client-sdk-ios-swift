@@ -1,0 +1,20 @@
+PODS:
+  - geos (6.0.2)
+  - GEOSwift (8.1.0):
+    - geos (~> 6.0)
+
+DEPENDENCIES:
+  - GEOSwift
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - geos
+    - GEOSwift
+
+SPEC CHECKSUMS:
+  geos: 73e5122ba8c6857812419873df3aa9a1920140a9
+  GEOSwift: 229ea71cfa48ebac01180ceee1bc229721c4feb0
+
+PODFILE CHECKSUM: 61057d9f1f50d37aa8e6a47bd1f3039023b32545
+
+COCOAPODS: 1.10.1

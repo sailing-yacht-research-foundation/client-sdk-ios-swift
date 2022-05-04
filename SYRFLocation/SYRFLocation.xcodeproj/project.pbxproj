@@ -33,6 +33,7 @@
 		C6A983B0261AFF3D000B50DD /* SYRFLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A983A2261AFF3D000B50DD /* SYRFLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6A983C2261AFFA3000B50DD /* PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A983C1261AFFA3000B50DD /* PermissionsManager.swift */; };
 		C6A983C6261AFFAF000B50DD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A983C5261AFFAF000B50DD /* LocationManager.swift */; };
+		C6B6965F2695B5BF00D0B1E0 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6965E2695B5BF00D0B1E0 /* DeviceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		C6A983AF261AFF3D000B50DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6A983C1261AFFA3000B50DD /* PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManager.swift; sourceTree = "<group>"; };
 		C6A983C5261AFFAF000B50DD /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C6B6965E2695B5BF00D0B1E0 /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		C6A983BE261AFF6D000B50DD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C6B6965E2695B5BF00D0B1E0 /* DeviceManager.swift */,
 				C67632F2261B1B95007E987C /* HeadingManager.swift */,
 				C6A983C5261AFFAF000B50DD /* LocationManager.swift */,
 				C67632EE261B1B7A007E987C /* RegionManager.swift */,
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6184B6C262F1E8600C9B751 /* LocationUtils.swift in Sources */,
+				C6B6965F2695B5BF00D0B1E0 /* DeviceManager.swift in Sources */,
 				C681A180263192D6000AFAF4 /* SensorsAcceleroData.swift in Sources */,
 				C6184B6E262F20DC00C9B751 /* GeneralConfig.swift in Sources */,
 				C67632FF261B1BD1007E987C /* HeadingData.swift in Sources */,
