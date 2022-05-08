@@ -136,6 +136,7 @@ public class LocationManager: NSObject {
         if (canUse) {
             self.isGettingLocation = true
             self.locationManager.requestLocation()
+            updateRecentLocation()
         } else if let error = error {
             self.delegate?.locationFailed(error)
         }
@@ -207,6 +208,7 @@ public class LocationManager: NSObject {
     private func updateRecentLocation() {
         if let lastLocation = self.locationManager.location {
             self.delegate?.currentLocationUpdated(SYRFLocation(location: lastLocation))
+            self.isGettingLocation = false
         }
     }
 }
