@@ -14,6 +14,9 @@ import CoreLocation
 */
 public class HeadingManagerConfig {
     
+    /// Is enabled
+    public var enabled: Bool
+    
     /// The physical device orientation used as a reference for heading calculation
     public var headingOrientation: CLDeviceOrientation?
     
@@ -25,6 +28,7 @@ public class HeadingManagerConfig {
      Configuration parameters are set to default values
      */
     public init() {
+        self.enabled = false
         self.headingOrientation = .portrait
         self.headingFilter = kCLHeadingFilterNone
     }
@@ -34,10 +38,12 @@ public class HeadingManagerConfig {
      Heading configuration is set from parameters
         
      - Parameters:
+        - enabled: Is enabled
         - orientation: The device orientation value.
         - filter : The degree filter value.
      */
-    public init(orientation: CLDeviceOrientation, filter: CLLocationDegrees) {
+    public init(enabled: Bool, orientation: CLDeviceOrientation, filter: CLLocationDegrees) {
+        self.enabled = enabled
         self.headingOrientation = orientation
         self.headingFilter = filter
     }

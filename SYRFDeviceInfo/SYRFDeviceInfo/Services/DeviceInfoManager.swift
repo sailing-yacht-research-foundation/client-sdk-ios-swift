@@ -10,6 +10,23 @@ import UIKit
 
 public class DeviceInfoManager: NSObject {
 
+    /// The manager configuration, set up either at initialization or through the configure method
+    private var configuration: DeviceInfoManagerConfig!
+
+    //MARK: - Lifecycle
+    
+    /**
+     Default initializer
+     Default initialization of the core location manager and its configuration
+     */
+    public override init() {
+        self.configuration = DeviceInfoManagerConfig()
+        
+        super.init()
+
+        self.configure(self.configuration)
+    }
+    
     public func getPhoneModel() -> String {
         return UIDevice.modelName
     }
@@ -17,4 +34,31 @@ public class DeviceInfoManager: NSObject {
     public func getOsVersion() -> String {
         return UIDevice.current.systemVersion
     }
+    
+    public func getBatteryLevel() -> Float {
+        return UIDevice.current.batteryLevel
+    }
+    
+    public func configure(_ configuration: DeviceInfoManagerConfig) {
+        self.configuration = configuration
+    }
+    
+    public func configureEnabled(_ configuration: DeviceInfoManagerConfig) {
+        self.configure(configuration)
+        
+        if configuration.enabled {
+            self.startDeviceInfoUpdates()
+        } else {
+            self.stopDeviceInfoUpdates()
+        }
+    }
+    
+    public func startDeviceInfoUpdates() {
+        UIDevice.current.isBatteryMonitoringEnabled = true
+    }
+    
+    public func stopDeviceInfoUpdates() {
+        UIDevice.current.isBatteryMonitoringEnabled = false
+    }
+    
 }

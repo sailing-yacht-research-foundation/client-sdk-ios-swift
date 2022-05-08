@@ -14,6 +14,9 @@ import CoreLocation
 */
 public class LocationManagerConfig {
     
+    /// Is enabled
+    public var enabled: Bool
+    
     /// The used activity type to determine the optimization level of the location updates
     public var activityType: CLActivityType?
     
@@ -32,17 +35,22 @@ public class LocationManagerConfig {
     /// The visual indicator value. The config value is only taken into consideration when permission are always and application runs in background
     public var allowIndicatorInBackground: Bool?
     
+    /// The permissions
+    public var authorizationLevel: PermissionsType
+    
     /**
      Default initializer
      Configuration parameters are set to default values for best accuracy and all location updates
      */
     public init() {
+        self.enabled = false
         self.activityType = .otherNavigation
         self.distanceFilter = kCLDistanceFilterNone
         self.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         self.pauseUpdatesAutomatically = false
         self.allowUpdatesInBackground = false
         self.allowIndicatorInBackground = true
+        self.authorizationLevel = .whenInUse
     }
 
 }

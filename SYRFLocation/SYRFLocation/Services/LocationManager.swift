@@ -112,6 +112,16 @@ public class LocationManager: NSObject {
         }
     }
     
+    public func configureEnabled(_ configuration: LocationManagerConfig) {
+        self.configure(configuration)
+        
+        if configuration.enabled {
+            self.startLocationUpdates()
+        } else {
+            self.stopLocationUpdates()
+        }
+    }
+    
     /**
      Entry point for requesting a one-time current location information
      
@@ -124,10 +134,8 @@ public class LocationManager: NSObject {
     public func getCurrentLocation() {
         let (canUse, error) = LocationUtils.canUseCoreLocation()
         if (canUse) {
-            self.locationManager.requestLocation()
             self.isGettingLocation = true
-            
-            self.updateRecentLocation()
+            self.locationManager.requestLocation()
         } else if let error = error {
             self.delegate?.locationFailed(error)
         }
@@ -146,11 +154,11 @@ public class LocationManager: NSObject {
         let (canUse, error) = LocationUtils.canUseCoreLocation()
         if (canUse) {
             if (self.shouldUseMonitoring()) {
-                self.locationManager.startMonitoringSignificantLocationChanges()
                 self.isMonitoring = true
+                self.locationManager.startMonitoringSignificantLocationChanges()
             } else {
-                self.locationManager.startUpdatingLocation()
                 self.isUpdating = true
+                self.locationManager.startUpdatingLocation()
             }
         } else if let error = error {
             self.delegate?.locationFailed(error)
