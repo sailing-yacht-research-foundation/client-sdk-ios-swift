@@ -120,8 +120,8 @@ public class NavigationManager: NSObject {
     //MARK: - Public Methods
     
     /**
-     Provide the manager with a specific LocationManagerConfig object
-     The configuration values are used for the core location manager
+     Provide the manager with a specific NavigationManagerConfig object
+     The configuration values are used for the navigation manager modules
      
      - Parameters:
         - configuration: The manager configuration values
@@ -130,13 +130,13 @@ public class NavigationManager: NSObject {
         self.configuration = configuration
         
         if let config = configuration.locationConfig {
-            self.locationManager.configureEnabled(config)
+            self.locationManager.configure(config)
         }
         if let config = configuration.headingConfig {
-            self.headingManager.configureEnabled(config)
+            self.headingManager.configure(config)
         }
         if let config = configuration.deviceInfoConfig {
-            self.deviceInfoManager.configureEnabled(config)
+            self.deviceInfoManager.configure(config)
         }
     }
     
@@ -161,6 +161,28 @@ public class NavigationManager: NSObject {
         }
         self.locationManager.getCurrentLocation()
     }
+    
+    /**
+     Provide the manager with a specific LocationManagerConfig object
+     The configuration values are used for the core location manager
+     
+     - Parameters:
+        - options: The manager configuration values
+     */
+    public func updateNavigationSettings(_ options: [String: Any]?, _ completion: ((Error?) -> ())?) {
+        if let val = options?["location"] as? Bool {
+            self.locationManager.configureEnabled(val)
+        }
+        if let val = options?["heading"] as? Bool {
+            self.headingManager.configureEnabled(val)
+        }
+        if let val = options?["deviceInfo"] as? Bool {
+            self.deviceInfoManager.configureEnabled(val)
+        }
+        
+        completion?(nil)
+    }
+    
     
     //MARK: - Private Methods
     

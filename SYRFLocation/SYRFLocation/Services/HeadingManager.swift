@@ -84,8 +84,8 @@ public class HeadingManager: NSObject {
         }
     }
     
-    public func configureEnabled(_ configuration: HeadingManagerConfig) {
-        self.configure(configuration)
+    public func configureEnabled(_ enabled: Bool) {
+        self.configuration.enabled = enabled
         
         if configuration.enabled {
             self.startHeadingUpdates()

@@ -112,8 +112,8 @@ public class LocationManager: NSObject {
         }
     }
     
-    public func configureEnabled(_ configuration: LocationManagerConfig) {
-        self.configure(configuration)
+    public func configureEnabled(_ enabled: Bool) {
+        self.configuration.enabled = enabled
         
         if configuration.enabled {
             self.startLocationUpdates()

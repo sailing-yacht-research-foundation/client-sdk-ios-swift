@@ -43,8 +43,8 @@ public class DeviceInfoManager: NSObject {
         self.configuration = configuration
     }
     
-    public func configureEnabled(_ configuration: DeviceInfoManagerConfig) {
-        self.configure(configuration)
+    public func configureEnabled(_ enabled: Bool) {
+        self.configuration.enabled = enabled
         
         if configuration.enabled {
             self.startDeviceInfoUpdates()
