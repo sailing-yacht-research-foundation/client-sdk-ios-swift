@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SYRFNavigation/SYRFNavigation.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SYRFDeviceInfo/SYRFDeviceInfo.xcodeproj">
    </FileRef>
    <FileRef

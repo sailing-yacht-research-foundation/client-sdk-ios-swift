@@ -84,6 +84,16 @@ public class HeadingManager: NSObject {
         }
     }
     
+    public func configureEnabled(_ enabled: Bool) {
+        self.configuration.enabled = enabled
+        
+        if configuration.enabled {
+            self.startHeadingUpdates()
+        } else {
+            self.stopHeadingUpdates()
+        }
+    }
+    
     /**
      Entry point for monitoring heading information updates based on the default or custom configuration
      

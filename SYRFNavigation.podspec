@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint SYRFLocation.podspec' to ensure this is a
+#  Be sure to run `pod spec lint SYRFNavigation.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "SYRFLocation"
-  spec.version      = "0.0.15"
-  spec.summary      = "SYRFLocation Library for Core Location and Core Motion."
+  spec.name         = "SYRFNavigation"
+  spec.version      = "0.0.1"
+  spec.summary      = "SYRFNavigation Library for Core Location and Core Motion."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-	SYRFLocation Library for Core Location and Core Motion.
+	SYRFNavigation Library for Core Location and Core Motion.
 	The SYRF Client SDK simplifies tracker management for developers.
 			DESC
 
@@ -83,7 +83,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift.git", :tag => "syrflocation-0.0.15" }
+  spec.source       = { :git => "https://github.com/sailing-yacht-research-foundation/client-sdk-ios-swift.git", :tag => "syrfnavigation-0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,10 +94,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "SYRFLocation", "SYRFLocation/SYRFLocation/**/*.{swift}"
-  spec.exclude_files = "SYRFLocation/Exclude"
+  spec.source_files  = "SYRFNavigation", "SYRFNavigation/SYRFNavigation/**/*.{swift}"
+  spec.exclude_files = "SYRFNavigation/Exclude"
 
-  # spec.public_header_files = "SYRFLocation/SYRFLocation/*.h"
+  # spec.public_header_files = "SYRFNavigation/SYRFNavigation/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -136,6 +136,7 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
-
+  spec.dependency "SYRFLocation"
+  spec.dependency "SYRFDeviceInfo"
+  
 end

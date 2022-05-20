@@ -21,6 +21,7 @@ end
 
 project 'SYRFTime/SYRFTime.xcodeproj'
 project 'SYRFLocation/SYRFLocation.xcodeproj'
+project 'SYRFNavigation/SYRFNavigation.xcodeproj'
 project 'SYRFGeospatial/SYRFGeospatial.xcodeproj'
 
 target :SYRFTime do
